@@ -1,5 +1,3 @@
-const path = require('path');
-const url = require('url');
 const {app, getGlobal, Menu, MenuItem} = require('electron').remote;
 const titlebar = require('custom-electron-titlebar');
 const menu = new Menu();
@@ -8,7 +6,7 @@ menu.append(new MenuItem({
 	label: getGlobal('gApp').name,
 	submenu: [
 	{
-		label: 'About',
+		label: 'Hakkımda - About',
 		click: () => {
 			getGlobal('gApp').sendLog("Author: " + getGlobal('gApp').author + "\nVersion: " + app.getVersion());
 		}

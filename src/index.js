@@ -1,6 +1,5 @@
 const {app, BrowserWindow, dialog} = require('electron');
 const path = require('path');
-const url = require('url');
 const log = require('electron-log');
 const {autoUpdater} = require("electron-updater");
 
